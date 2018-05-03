@@ -1,21 +1,46 @@
-# redot-web
+# vue-bolierplate
 
-> A Vue.js project
+기존 뷰의 folder hierarchy는 효율적이지 못해서 구조를 변형시켰습니다.
 
-## Build Setup
+구조는 아래와 같습니다.
 
-``` bash
-# install dependencies
-npm install
+````
+src   
+├── App.vue 
+├── assets
+|   ├── css
+|   |   └── main.css
+|   ├── font 
+|   └── img 
+├── commons
+|   ├── directives 
+|   ├── functions 
+|   ├── resources
+|   └── validations
+├── config 
+|   ├── directives.js
+|   ├── router.js
+|   └── validations.js
+├── shared-components 
+|   ├── RangeCustom.vue 
+|   ├── Sidebar.vue 
+|   └── Toolbar.vue 
+├── spa 
+|   ├── Login 
+|   |   ├── components
+|   |   └── Login.vue
+|   ├── Products 
+|   |   ├── components
+|   |   └── Products.vue
+|   ├── components
+|   ├── Home.vue 
+|   └── NotFound.vue 
+├── vuex 
+|   ├── modules 
+|   └── store.js 
+└── main.js
+````
 
-# serve with hot reload at localhost:8080
-npm run dev
+자세한 설명들이 각 섹션별로 README.md 로 이루어져 있습니다.
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+설명을 보시면 이해가 빠를 것 입니다.
